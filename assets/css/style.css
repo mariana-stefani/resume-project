@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/*--------------------------------------------------------Colors*/
+/*--------------------------------------------Colors*/
 
 .bg-color-name-title {
     background-color: #676767;
@@ -14,11 +14,23 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
 }
 
 .bg-color-contact {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
     background-color: #ffffff;
 }
 
@@ -35,8 +47,18 @@
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #d9a81d;
 }
+
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
 
 
 
@@ -44,16 +66,16 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: 300;
     background-color: #525252;
-    color: #55555;
+    color: #555555;
 }
 
-/*--------------------------------------------------------Special Paddings/Margins/Text*/
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
 h2,
 h3,
-h4,
-    {
+h4 {
     margin: 0;
 }
 
@@ -71,24 +93,24 @@ h4,
     display: inline-block;
 }
 
+
 .row-table {
     display: table;
 }
 
 .history-heading,
 .section-heading {
-    font-family: "Exo" sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
 }
 
 
-/*--------------------------------------------------------Heading*/
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
-
 }
 
 .heading {
@@ -129,14 +151,12 @@ header {
 
 #nav li {
     padding: 0;
-
 }
 
 .menuitem {
     height: 120px;
     text-align: center;
     padding: 0;
-
 }
 
 .menuitem a {
@@ -145,6 +165,7 @@ header {
     color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
@@ -164,15 +185,16 @@ header {
     letter-spacing: 2px;
 }
 
-/*--------------------------------------------------------Hoover.css*/
+
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
 
-/*--------------------------------------------------------Footer*/
+/*--------------------------------------------Footer*/
 
 footer {
     background-color: #525252;
@@ -189,7 +211,7 @@ footer .cv-pdf i {
 }
 
 footer .cv-pdf i:hover {
-    color: #e85610;
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -198,7 +220,6 @@ footer .cv-pdf i:hover {
 
 .social-links {
     padding-bottom: 15px;
-    color: red;
 }
 
 .social-links li a i {
@@ -225,10 +246,9 @@ footer .cv-pdf i:hover {
     margin: 20px;
 }
 
+/*--------------------------------------------Three Reasons*/
 
-/*--------------------------------------------------------Three Reasons*/
-
-.three-resons-icon {
+.three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
 }
@@ -237,8 +257,7 @@ footer .cv-pdf i:hover {
     margin-bottom: 15px;
 }
 
-
-/*--------------------------------------------------------Personal Info*/
+/*--------------------------------------------Personal Info*/
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -268,16 +287,13 @@ footer .cv-pdf i:hover {
     font-weight: 700;
 }
 
-
 .personal-info-item .value {
     display: inline-block;
     position: relative;
-    width: 60%
+    width: 60%;
 }
 
-
-
-/*--------------------------------------------------------Skills*/
+/*--------------------------------------------Skills*/
 
 .progress {
     position: relative;
@@ -290,15 +306,16 @@ footer .cv-pdf i:hover {
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2)
+    background-color: rgba(25, 25, 25, 0.2);
 }
+
 
 .progress-section {
     margin: 40px 20px;
 }
 
 
-/*--------------------------------------------------------Work History*/
+/*--------------------------------------------Work History*/
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -313,13 +330,13 @@ footer .cv-pdf i:hover {
 }
 
 .timeline-item::before {
-    content: attr(dates);
+    content: attr(data-dates);
     position: absolute;
     left: 2.5em;
     top: 3em;
     display: block;
-    Font-family: "Exo", sans-serif;
-    Font-weight: 500;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
     font-size: .8em;
     padding: 0;
     margin: 0;
@@ -335,7 +352,6 @@ footer .cv-pdf i:hover {
     border-radius: 12px;
     content: '';
     background: #fafafa;
-
 }
 
 .history-heading {
@@ -347,9 +363,7 @@ footer .cv-pdf i:hover {
     margin-bottom: 30px;
 }
 
-
-
-/*--------------------------------------------------------Contact*/
+/*--------------------------------------------Contact*/
 
 .contact-heading {
     font-family: "Exo", sans-serif;
@@ -357,6 +371,7 @@ footer .cv-pdf i:hover {
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 
 .center-form {
     padding-top: 10px;
@@ -371,8 +386,12 @@ button[type="submit"] {
     color: #fafafa;
 }
 
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
 
-/*--------------------------------------------------------Media Queries*/
+/*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
     .section-column {
@@ -380,9 +399,7 @@ button[type="submit"] {
         float: none;
         display: table-cell;
     }
-}
 
-@media (min-width: 768px) and (max-width:991px) {
     .center-form {
         padding-top: 30px;
         min-height: 240px;
